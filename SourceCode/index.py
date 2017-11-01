@@ -6,6 +6,10 @@ app = Flask(__name__)
 def Home():
 	return render_template("index.html"), 200
 
+@app.route("/guides")
+def Tamer():
+    return render_template("guides.html"), 200
+
 def init(app):
     config = ConfigParser.ConfigParser()
     try:
