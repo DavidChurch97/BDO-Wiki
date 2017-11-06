@@ -42,66 +42,24 @@
     </nav>
 
     {% endblock navigation %}
-    
-    {% block Carousel %}
 
-    <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('{{ url_for('static', filename='img/kamasylvia_header.png') }}')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Kamasylvia</h3>
-              <p>Officially released September 27th.</p>
-            </div>
-          </div>
-      </div>
-    </header>
+    {% block header_image %}
 
-    {% endblock Carousel %}
-
-    {% block information %}
-
-    <!-- Page Content -->
     <div class="container">
-
-      <h1 class="my-4">Welcome to BDO Guides</h1>
-
-      <!-- Features Section -->
-      <div class="row">
-        <div class="col-lg-6">
-          <h2>Information:</h2>
-          <p>Here you will find info on:</p>
-          <ul>
-            <li>Classes</li>
-            <li>Life skills</li>
-            <li>Geography</li>
-          </ul>
+        <div class="row">
+            <div class="profile-header-container">   
+                <div class="profile-header-img">
+                    <img class="img-circle" src="{{ url_for('static', filename='img/berserker.png') }}" />
+                    <!-- badge -->
+                    <div class="rank-label-container">
+                        <span class="label label-default rank-label">Berserker</span>
+                    </div>
+                </div>
+            </div> 
         </div>
-        <div class="col-lg-6">
-          <img class="img-fluid rounded" src="{{ url_for('static', filename='img/subheader.png') }}" alt="">
-        </div>
-      </div>
-      <!-- /.row -->
-
-      {% endblock information %}
-
-      <hr>
-      {% block contact %}
-
-      <div class="row mb-4">
-        <div class="col-md-8">
-          <p>If you would like to contact us, please fill in the form on the contact page.</p>
-        </div>
-        <div class="col-md-4">
-          <a class="btn btn-lg btn-secondary btn-block" href="#">Contact Us</a>
-        </div>
-      </div>
-
-      {% endblock contact%}
-
     </div>
-    <!-- /.container -->
+
+    {% endblock header_image %}
 
     {% block footer%}
 

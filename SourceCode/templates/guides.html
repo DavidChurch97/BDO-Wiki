@@ -31,10 +31,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="/about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="guides.html">Guides</a>
+              <a class="nav-link" href="/guides">Guides</a>
             </li>
           </ul>
         </div>
@@ -43,9 +43,10 @@
 
     {% endblock navigation %}
     
+    {% block classes %}
     <!-- Page Content -->
     <div class="container">
-      <!-- Team Members Row -->
+    <section id="classes">
       <div class="row">
         <div class="col-lg-12">
           <h2 class="my-4">Classes</h2>
@@ -53,102 +54,193 @@
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/berserker.png') }}" alt="">
           <h3>Berserker
-            <small>Job Title</small>
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+          <a href="/berserker" class="btn btn-secondary btn-lg active" role="button">Guide</a>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/dark_knight.png') }}" alt="">
           <h3>Dark Knight
-            <small>Job Title</small>
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/kunoichi.png') }}" alt="">
           <h3>Kunoichi
-            <small>Job Title</small>
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/meahwa.png') }}" alt="">
           <h3>Meahwa
-            <small>Job Title</small>
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/musa.png') }}" alt="">
           <h3>Musa
-            <small>Job Title</small>
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/mystic.png') }}" alt="">
           <h3>Mystic
-            <small>Job Title</small>
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/ninja.png') }}" alt="">
           <h3>Ninja
-            <small>Job Title</small>
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/ranger.png') }}" alt="">
           <h3>Ranger
-            <small>Job Title</small>
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/sorceress.png') }}" alt="">
           <h3>Sorceress
-            <small>Job Title</small>
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/striker.png') }}" alt="">
           <h3>Striker
-            <small>Job Title</small>
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/tamer.png') }}" alt="">
           <h3>Tamer
-            <small>Job Title</small>
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/warrior.png') }}" alt="">
           <h3>Warrior
-            <small>Job Title</small>
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/witch.png') }}" alt="">
           <h3>Witch
-            <small>Job Title</small>
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/wizard.png') }}" alt="">
           <h3>Wizard
-            <small>Job Title</small>
           </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
         </div>
       </div>
+    </section>
+
+      {% endblock classes %}
+
+      <hr>
+
+      {% block lifeskills %}
+
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="my-4">Life Skills</h2>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/alchemy.png') }}" alt="">
+          <h3>Alchemy
+          </h3>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/cooking.png') }}" alt="">
+          <h3>Cooking
+          </h3>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/farming.png') }}" alt="">
+          <h3>Farming
+          </h3>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/gathering.png') }}" alt="">
+          <h3>Gathering
+          </h3>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/hunting.png') }}" alt="">
+          <h3>Hunting
+          </h3>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/processing.png') }}" alt="">
+          <h3>Processing
+          </h3>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/trading.png') }}" alt="">
+          <h3>Trading
+          </h3>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/training.png') }}" alt="">
+          <h3>Training
+          </h3>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
+        </div>
+      </div>
+
+      {% endblock lifeskills %}
+
+      <hr>
+
+      {% block provinces %}
+
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="my-4">Provinces</h2>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/Balenos.png') }}" alt="">
+          <h3>Balenos
+          </h3>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/Calpheon.png') }}" alt="">
+          <h3>Calpheon
+          </h3>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/Media.png') }}" alt="">
+          <h3>Media
+          </h3>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/Serendia.png') }}" alt="">
+          <h3>Serendia
+          </h3>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/Valencia.png') }}" alt="">
+          <h3>Valencia
+          </h3>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button">Guide</a>
+        </div>
+      </div>
+
+      {% endblock provinces %}
 
       <hr>
 

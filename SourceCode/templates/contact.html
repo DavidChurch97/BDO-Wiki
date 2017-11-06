@@ -42,66 +42,45 @@
     </nav>
 
     {% endblock navigation %}
-    
-    {% block Carousel %}
 
-    <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('{{ url_for('static', filename='img/kamasylvia_header.png') }}')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Kamasylvia</h3>
-              <p>Officially released September 27th.</p>
-            </div>
-          </div>
-      </div>
-    </header>
-
-    {% endblock Carousel %}
-
-    {% block information %}
-
-    <!-- Page Content -->
+    {% block contactform %}
+<!-- Page Content -->
     <div class="container">
-
-      <h1 class="my-4">Welcome to BDO Guides</h1>
-
-      <!-- Features Section -->
+      <br>
+      <!-- Contact Form -->
       <div class="row">
-        <div class="col-lg-6">
-          <h2>Information:</h2>
-          <p>Here you will find info on:</p>
-          <ul>
-            <li>Classes</li>
-            <li>Life skills</li>
-            <li>Geography</li>
-          </ul>
-        </div>
-        <div class="col-lg-6">
-          <img class="img-fluid rounded" src="{{ url_for('static', filename='img/subheader.png') }}" alt="">
+        <div class="col-lg-8 mb-4">
+          <h3>Send us a Message</h3>
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Full Name:</label>
+                <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                <p class="help-block"></p>
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Email Address:</label>
+                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Message:</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+              </div>
+            </div>
+            <div id="success"></div>
+            <!-- For success/fail messages -->
+            <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+          </form>
         </div>
       </div>
+    </div>
       <!-- /.row -->
 
-      {% endblock information %}
-
-      <hr>
-      {% block contact %}
-
-      <div class="row mb-4">
-        <div class="col-md-8">
-          <p>If you would like to contact us, please fill in the form on the contact page.</p>
-        </div>
-        <div class="col-md-4">
-          <a class="btn btn-lg btn-secondary btn-block" href="#">Contact Us</a>
-        </div>
-      </div>
-
-      {% endblock contact%}
-
-    </div>
-    <!-- /.container -->
+          {% endblock contactform %}
 
     {% block footer%}
 
@@ -120,6 +99,7 @@
     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
     <script src="{{ url_for('static', filename='js/js.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/contact.js') }}"></script>
 
     {% endblock js %}
   </body>

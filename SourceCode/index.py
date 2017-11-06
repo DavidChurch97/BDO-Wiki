@@ -7,8 +7,20 @@ def Home():
 	return render_template("index.html"), 200
 
 @app.route("/guides")
-def Tamer():
+def Guides():
     return render_template("guides.html"), 200
+
+@app.route("/about")
+def About():
+	return render_template("about.html"), 200
+
+@app.route("/contact")
+def Contact():
+    return render_template("contact.html"), 200
+
+@app.route("/berserker")
+def Berserker():
+    return render_template("berserker.html"), 200
 
 def init(app):
     config = ConfigParser.ConfigParser()
