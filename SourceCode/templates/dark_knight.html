@@ -66,15 +66,17 @@
 		<sectoin id="Class Loadout">
 		<div id="Class Loadout">
 			<h2>Class Loadout</h2>
-			<p>For your primary weapon, the  Liverto is without a doubt the best weapon you can get that isn’t bound. You will want to upgrade it to +15 or higher as soon as possible. If you don’t have the budget for this weapon then the  Yuria weapon is what you should be using in the mean time while you save up enough silver for Liverto.</p>
-			<p>For your off-hand,  Krea or  Saiyer Ornamental Knot are good choices for Berserker.</p>
+			<p>Yuria or Rosar/Krea is what you should be aiming for to level your character or if you can’t afford Liverto. You should enhance it to +15 as soon as possible and you may want to make it ultimate (yellow) to close the AP difference.</p>
+      <p>Liverto is what you should be aiming for before Kzarka. You will want to upgrade it to +15 or higher as soon as possible. I would recommend getting it to TRI and then you really want to switch to Kzarka. The liverto has slightly more AP than Rosar/Krea, but it also has a Critical Hit Rate +3 item effect.</p>
+      <p>Kzarka is the BiS main weapon for all classes. It has the same AP as the liverto but it has more accuracy and a Attack Speed +3 item effect.</p>
+			<p>The Ornamental Knot of Sealed Magical Power is what is recommended if you are new because it gives accuracy and AP/DP. It is also given to you for free through Black Spirit quests. Use this  until you can get Saiyer or Oros.</p>
 			<p>The best armor in the game is currently dropped from Bosses.</p>
 			 <li>Giath’s Helmet (helmet) – dropped from Giath.</li>
 			 <li>Red Nose (chest) – dropped from the Red Nose and Contaminated Imp Captian.</li>
 			 <li>Bheg’s Gloves (gloves) – dropped from Bheg.</li>
 			 <li>Muskan’s Shoes (shoes) – dropped from Monastery Leader.</li>
 			 <br>
-			<p>The one of most popular armor choices for Berserker is the  Grunil set. It increases your maximum HP and will give you 2 socket slots on each piece, along with extra AP if you have the full set. Another advantage of using this set is that it is viable on any class, allowing you to swap to another class easily.</p>
+			<p>The are quite a few popular armor choices for Dark Knight. Some players like to go full  Grunil set because it increases your maximum HP and will give you 2 socket slots on each piece, along with extra AP +7. Another advantage of using this set is that it is viable on any class, allowing you to swap to another class easily.</p>
 			<p>These are the best accessories in the game. They do cost a significant amount of silver.</p>
 			 <li>Fugitive Khalk’s Earring x2</li>
 			 <li>Ring of Crescent Guardian x2</li>
@@ -92,7 +94,16 @@
 		<section id="Skills">
 		<div class="Skills">
 			<h2>Skills</h2>
-			<img src="{{ url_for('static', filename='img/skills/berserker_skills.png')}}">
+			<table class="table table-bordered table-striped table-hover" id="dk_table"> 
+        <thead class="thead-inverse">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Use</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
 		</div>
 		</section>
 		</div>
@@ -121,3 +132,19 @@
   </body>
 
 </html>
+
+<script>
+  $(document).ready(function(){
+    $.getJSON('/static/js/dark_knight.json', function(data){
+      var dark_knight_data = '';
+      $.each(data, function(key,value){
+        dark_knight_data += '<tr>';
+        dark_knight_data += '<td>'+value.id+'</td>';
+        dark_knight_data += '<td>'+value.name+'</td>';
+        dark_knight_data += '<td>'+value.use+'</td>';
+        dark_knight_data += '</tr>';
+      });
+      $('#dk_table').append(dark_knight_data);
+    });
+  });
+</script>
