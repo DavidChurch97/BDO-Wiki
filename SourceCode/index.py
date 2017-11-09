@@ -25,6 +25,10 @@ def Contact():
 def Berserker():
     return render_template("berserker.html"), 200
 
+@app.route("/dark_knight")
+def Dark_Knight():
+    return render_template("dark_knight.html"), 200
+
 def init(app):
     config = ConfigParser.ConfigParser()
     try:
