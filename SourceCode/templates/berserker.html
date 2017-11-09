@@ -92,7 +92,16 @@
 		<section id="Skills">
 		<div class="Skills">
 			<h2>Skills</h2>
-			<img src="{{ url_for('static', filename='img/skills/berserker_skills.png')}}">
+			<table class="table table-bordered table-striped table-hover" id="ber_table"> 
+              <thead class="thead-inverse">
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Use</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
 		</div>
 		</section>
 		</div>
@@ -121,3 +130,19 @@
   </body>
 
 </html>
+
+<script>
+  $(document).ready(function(){
+    $.getJSON('/static/js/berserker.json', function(data){
+      var berserker_data = '';
+      $.each(data, function(key,value){
+        berserker_data += '<tr>';
+        berserker_data += '<td>'+value.id+'</td>';
+        berserker_data += '<td>'+value.name+'</td>';
+        berserker_data += '<td>'+value.use+'</td>';
+        berserker_data += '</tr>';
+      });
+      $('#ber_table').append(berserker_data);
+    });
+  });
+</script>
