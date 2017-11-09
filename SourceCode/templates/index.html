@@ -42,22 +42,22 @@
     </nav>
 
     {% endblock navigation %}
-    
+
     {% block Carousel %}
-
+    
     <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('{{ url_for('static', filename='img/kamasylvia_header.png') }}')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Kamasylvia</h3>
-              <p>Officially released September 27th.</p>
-            </div>
-          </div>
-      </div>
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img class="d-block w-100" src="{{ url_for('static', filename='img/kamasylvia_header.png') }}" alt="First slide">
+		        <div class="carousel-caption d-none d-md-block">
+				    <h3>Kamasylvia</h3>
+				    <p>Officially released September 27th</p>
+				  </div>
+		    </div>
+		  </div>
+		</div>
     </header>
-
     {% endblock Carousel %}
 
     {% block information %}
@@ -94,7 +94,7 @@
           <p>If you would like to contact us, please fill in the form on the contact page.</p>
         </div>
         <div class="col-md-4">
-          <a class="btn btn-lg btn-secondary btn-block" href="#">Contact Us</a>
+          <a class="btn btn-lg btn-secondary btn-block" href="/contact">Contact Us</a>
         </div>
       </div>
 
