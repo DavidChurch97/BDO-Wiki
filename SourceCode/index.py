@@ -29,6 +29,22 @@ def Berserker():
 def Dark_Knight():
     return render_template("dark_knight.html"), 200
 
+@app.route("/kunoichi")
+def Kunoichi():
+    return render_template("kunoichi.html"), 200
+
+@app.route("/musa")
+def Musa():
+    return render_template("musa.html"), 200
+
+@app.route("/maehwa")
+def Maehwa():
+    return render_template("maehwa.html"), 200
+
+@app.route("/ninja")
+def Ninja():
+    return render_template("ninja.html"), 200
+
 def init(app):
     config = ConfigParser.ConfigParser()
     try:
