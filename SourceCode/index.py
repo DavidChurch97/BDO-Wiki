@@ -5,6 +5,8 @@ from logging.handlers import RotatingFileHandler
 from flask import Flask, render_template, request
 app = Flask(__name__)
 
+#--------Main pages--------#
+
 @app.route("/")
 def Home():
     return render_template("index.html"), 200
@@ -20,6 +22,10 @@ def About():
 @app.route("/contact")
 def Contact():
     return render_template("contact.html"), 200
+
+#--------Main pages--------#
+
+#--------Classes--------#
 
 @app.route("/berserker")
 def Berserker():
@@ -44,6 +50,80 @@ def Maehwa():
 @app.route("/ninja")
 def Ninja():
     return render_template("ninja.html"), 200
+
+@app.route("/ranger")
+def Ranger():
+    return render_template("ranger.html"), 200
+
+@app.route("/sorceress")
+def Sorceress():
+    return render_template("sorceress.html"), 200
+
+@app.route("/tamer")
+def Tamer():
+    return render_template("tamer.html"), 200
+
+@app.route("/warrior")
+def Warrior():
+    return render_template("warrior.html"), 200
+
+@app.route("/witch")
+def Witch():
+    return render_template("witch.html"), 200
+
+@app.route("/wizard")
+def Wizard():
+    return render_template("wizard.html"), 200
+
+#--------Classes--------#
+
+#--------Life skills--------#
+
+@app.route("/alchemy")
+def Alchemy():
+    return render_template("alchemy.html"), 200
+
+@app.route("/cooking")
+def Cooking():
+    return render_template("cooking.html"), 200
+
+@app.route("/gathering")
+def Gathering():
+    return render_template("gathering.html"), 200
+
+@app.route("/hunting")
+def Hunting():
+    return render_template("hunting.html"), 200
+
+@app.route("/trading")
+def Trading():
+    return render_template("trading.html"), 200
+
+#--------Life skills--------#
+
+#--------Provinces--------#
+
+@app.route("/balenos")
+def Balenos():
+    return render_template("balenos.html"), 200
+
+@app.route("/calpheon")
+def Calpheon():
+    return render_template("calpheon.html"), 200
+
+@app.route("/media")
+def Media():
+    return render_template("media.html"), 200
+
+@app.route("/serendia")
+def Serendia():
+    return render_template("serendia.html"), 200
+
+@app.route("/valencia")
+def Valencia():
+    return render_template("valencia.html"), 200
+
+#--------Provinces--------#
 
 def init(app):
     config = ConfigParser.ConfigParser()

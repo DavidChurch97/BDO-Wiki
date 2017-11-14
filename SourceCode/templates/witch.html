@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>BDO Guides</title>
+    
+    {% block css %}
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/css.css') }}" rel="stylesheet" />
+    
+    {% endblock css %}
+  </head>
+
+  <body>
+  
+    {% block navigation %}
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">BDO Guides</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/guides">Guides</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% endblock navigation %}
+
+    <br>
+
+    {% block information %}
+   <div class="container">
+   		<div class="jumbotron">
+   		<img src="{{ url_for('static', filename='img/logo/witch.png')}}" style="float: right;">
+		  <h1>Witch</h1>
+		  <a class="btn btn-primary btn-lg" href="#information" role="button">Information</a>
+		  <a class="btn btn-primary btn-lg" href="#Class Loadout" role="button">Class loadout</a>
+		  <a class="btn btn-primary btn-lg" href="#playS" role="button">Play Style</a>
+		<br><br>
+		<section is="Information">
+		<div id="information">
+			<h2>Information</h2>
+			<p>
+       The Witch class is the typical magic caster class with plenty of ranged AoE spells, slows, knock downs and stuns. Their main weapon is a staff and their secondary weapon is a dagger. This high damage dealing class can also be played as a support class due to them having heal skills, shields and can resurrect an ally. New players will find the Witch class fairly easy to play but requires you to manage your cool-downs and mana for expert level plays.
+      </p>
+      <p>
+        Witches are very strong in group PvP and sieges but are relatively weak in 1v1 PvP unless you catch your opponent off-guard and are able to stun/knock down. This class can also be played on horseback really well due to the ability to cast all your main damage skills while riding the horse. PvE is very strong and easy due to the amount of AoE skills and long range.
+      </p>
+			<img src="{{ url_for('static', filename='img/rating/wit_rating.png')}}">
+		</div>
+		</section>
+		<br><br>
+		<sectoin id="Class Loadout">
+		<div id="Class Loadout">
+			<h2>Class Loadout</h2>
+			<p>
+        For your primary weapon, the Liverto is without a doubt the best weapon you can get that isn’t bound. You will want to upgrade it to +15 or higher as soon as possible. If you don’t have the budget for this weapon then the Yuria weapon is what you should be using in the meantime while you save up enough silver for Liverto.
+      </p>
+			<p>
+        For your off-hand, Steel Dagger is best for Witch.
+      </p>
+			<p>The best armor in the game is currently dropped from Bosses.</p>
+			 <li>Giath’s Helmet (helmet) – dropped from Giath.</li>
+			 <li>Red Nose (chest) – dropped from the Red Nose and Contaminated Imp Captian.</li>
+			 <li>Bheg’s Gloves (gloves) – dropped from Bheg.</li>
+			 <li>Muskan’s Shoes (shoes) – dropped from Monastery Leader.</li>
+			 <br>
+			<p>The most popular armour choice for Sorceress is the Grunil set. It increases your maximum HP and will give you 2 socket slots on each piece, along with extra AP if you have the full set. Another advantage of using this set is that it is viable on any class, allowing you to swap to another class easily.</p>
+			<p>These are the best accessories in the game. They do cost a significant amount of silver.</p>
+			 <li>Fugitive Khalk’s Earring x2</li>
+			 <li>Ring of Crescent Guardian x2</li>
+			 <li>Ogre Ring Necklace x1</li>
+			 <li>Basilisk’s Belt x1</li>
+			<br>
+			<p>If you don’t have enough silver for the best accessories, these are a good temporary alternative.</p>
+			 <li>Bares Earring x2</li>
+			 <li>Bares Ring x2</li>
+			 <li>Topaz Necklace of Regeneration x1</li>
+			 <li>Bares Belt (OR any with AP) x1</li>
+		</div>
+		</sectoin>
+		<br><br>
+		<section id="playS">
+		<div class="Playstyle">
+			<h2>Play Style</h2>
+			<img src="{{ url_for('static', filename='img/playstyle/witchPS.png')}}">
+		</div>
+		</section>
+		</div>
+	</div>
+
+    {% endblock information %}
+
+    {% block footer%}
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; BDO Guides 2017</p>
+      </div>
+    </footer>
+    
+    {%endblock footer%}
+
+    {% block js %}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/js.js') }}"></script>
+
+    {% endblock js %}
+  </body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>BDO Guides</title>
+    
+    {% block css %}
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/css.css') }}" rel="stylesheet" />
+    
+    {% endblock css %}
+  </head>
+
+  <body>
+  
+    {% block navigation %}
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">BDO Guides</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/guides">Guides</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% endblock navigation %}
+
+    <br>
+
+    {% block information %}
+   <div class="container">
+   		<div class="jumbotron">
+   		<img src="{{ url_for('static', filename='img/logo/ninja.png')}}" style="float: right;">
+		  <h1>Ninja</h1>
+		  <a class="btn btn-primary btn-lg" href="#information" role="button">Information</a>
+		  <a class="btn btn-primary btn-lg" href="#Class Loadout" role="button">Class loadout</a>
+      <a class="btn btn-primary btn-lg" href="#playS" role="button">Play Style</a>
+		<br><br>
+		<section is="Information">
+		<div id="information">
+			<h2>Information</h2>
+      <p>
+        This class uses a sword as their primary weapon and shurikens as their secondary weapon. The class is dynamic and fast paced with many movement and jump skills. Ninja uses light armor and has many complex combos making it a hard class to master.
+      </p>
+			<img src="{{ url_for('static', filename='img/rating/nin_rating.png')}}">
+		</div>
+		</section>
+		<br><br>
+		<sectoin id="Class Loadout">
+		<div id="Class Loadout">
+			<h2>Class Loadout</h2>
+			<p>For the weapon, if you have enough gold, get the Liverto and upgrade it to +15 as soon as possible. If you don’t have the budget for this weapon then the Bares weapon is good for PvE, Seleth is good for PvP and Yuria is good for a balance between both.</p>
+      <p>It is recommend to use the Argerian Set. The Tartoros set is good on Ninja too but you don’t really need the extra energy that the set provides if you are using pots and your buffs correctly. I would rather have the attack speed over the energy. Some people also prefer the Neil Trees set but the HP difference isn’t massive and it really depends on your personally preference.</p>
+			<p>The best armor in the game is currently dropped from Bosses.</p>
+			 <li>Giath’s Helmet (helmet) – dropped from Giath.</li>
+			 <li>Red Nose (chest) – dropped from the Red Nose and Contaminated Imp Captian.</li>
+			 <li>Bheg’s Gloves (gloves) – dropped from Bheg.</li>
+			 <li>Muskan’s Shoes (shoes) – dropped from Monastery Leader.</li>
+			 <br>
+			<p>These are the best accessories in the game. They do cost a significant amount of silver.</p>
+			 <li>Fugitive Khalk’s Earring x2</li>
+			 <li>Ring of Crescent Guardian x2</li>
+			 <li>Ogre Ring Necklace x1</li>
+			 <li>Basilisk’s Belt x1</li>
+			<br>
+			<p>If you don’t have enough silver for the best accessories, these are a good temporary alternative.</p>
+			 <li>Bares Earring x2</li>
+			 <li>Bares Ring x2</li>
+			 <li>Topaz Necklace of Regeneration x1</li>
+			 <li>Bares Belt (OR any with AP) x1</li>
+		</div>
+		</sectoin>
+		<br><br>
+    <section id="playS">
+    <div class="Playstyle">
+      <h2>Play Style</h2>
+      <img src="{{ url_for('static', filename='img/playstyle/ninjaPS.png')}}">
+    </div>
+    </section>
+		</div>
+	</div>
+
+    {% endblock information %}
+
+    {% block footer%}
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; BDO Guides 2017</p>
+      </div>
+    </footer>
+    
+    {%endblock footer%}
+
+    {% block js %}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/js.js') }}"></script>
+
+    {% endblock js %}
+  </body>
+
+</html>
