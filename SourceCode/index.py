@@ -133,6 +133,14 @@ def Valencia():
 
 #--------Provinces--------#
 
+#--------Error pages--------#
+
+@app.errorhandler(404)
+def page_not_found(error):
+	return render_template("error404.html"), 200
+
+#--------error pages--------#
+
 def init(app):
     config = ConfigParser.ConfigParser()
     try:
