@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>BDO Guides</title>
+    
+    {% block css %}
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/css.css') }}" rel="stylesheet" />
+    
+    {% endblock css %}
+    
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+
+  </head>
+
+  <body>
+  
+    {% block navigation %}
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">BDO Guides</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/guides">Guides</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% endblock navigation %}
+
+    <br>
+
+    {% block information %}
+   <div class="container">
+   		<div class="jumbotron">
+   		<img src="{{ url_for('static', filename='img/life_skills/trading.png')}}" style="float: right;">
+		  <h1>Trading</h1>
+		  <a class="btn btn-primary btn-lg" href="#information" role="button">Information</a>
+      <a class="btn btn-primary btn-lg" href="#buying" role="button">Buying goods</a>
+		  <a class="btn btn-primary btn-lg" href="#transporting" role="button">Transporting goods</a>
+      <a class="btn btn-primary btn-lg" href="#sell" role="button">Sell & bargin</a>
+      <a class="btn btn-primary btn-lg" href="#hot-time" role="button">Hot-time trading</a>
+		<br><br>
+		<section is="Information">
+		<div id="information">
+			<h2>Information</h2>
+			<p>
+        Trading has the potential to be very profitable once you improve the level of your profession. Don’t fret if it may seem very arduous in the beginning, the profits will gradually increase with time.
+      </p>
+		</div>
+		</section>
+
+    <section id="buying">
+    <div class="buying">
+      <h2>Buying goods</h2>
+      <p>
+        To buy trade goods, go to a Trade Administrator and press “R” to talk to them. Then, click “Commerce” to view the goods they sell. It is advisable to buy goods that are lower than their regular price (less than 100%) so to say; ‘buy low sell high’. You can view the value of the goods at each town by pressing “Show Value”, this will consume one energy. Once you have found something you want to buy, click “Add” and enter the amount wanted. At the bottom you will see the cost, weight and and space this will take up. When you are ready, click “Purchase all” in to the bottom-right corner.
+      </p>
+    </div>
+    </section>
+
+		<section id="transporting">
+		<div class="transporting">
+			<h2>Transporting goods</h2>
+			<p>
+       There are 5 ways of transporting trade goods across land:
+      </p>
+      <ul>
+        <li>Carry them on your back</li>
+        <li>Use a donkey or horse</li>
+        <li>Use your own wagon</li>
+        <li>Use the NPC trading wagon/boat</li>
+        <li>Use a boat</li>
+		  </ul>
+    </div>
+		</section>
+
+    <section id="sell">
+    <div class="sell">
+      <h2>Selling goods & bargin</h2>
+      <p>
+       Once you have arrived at a town/city you can sell the goods by going to the Trade Administrator and pressing “R”. On the right you will see a window that lists all of the goods you have. Click “Sell All” to sell the goods for the standard price, or click “Bargain” to try and increase your profit. Bargaining will not decrease the amount of money you can sell it for, but it will take up 5 energy each time you try to bargain.
+      </p>
+      <p>
+        Once you have clicked “Bargain” a window will pop-up in the center of your screen. Underneath the scales you will see 2 buttons. The button on the left has a chance of slightly moving the scales and the button on the right has a chance of greatly moving the scales. The idea is to move the scales 3 times and try to get them level. If you manage to level the scales on your third turn, you will achieve “Bargain Success” and can then sell your goods for a higher price. You get more tries to move the scale with trading costumes, the better the costumes, the more extra tries you receive.
+      </p>
+      <h3>Black market merchents</h3>
+      <p>
+        Though this is not related to the trading profession, the merchants are similar to the Illegal Traders as they only appear at night. From 10 pm to 7 am, a black market trader appears in all the main towns. They reveal random buy-able items for 50 energy a piece. They sell these items at set prices. The items can either be greatly overpriced or lower than the current market values. They sell anything from crystals to Ogre Rings. Beware, the items that the merchant sells are random so use it at your own risk (not that you need much energy anyways).
+      </p>
+    </div>
+    </section>
+
+    <section id="hot-time">
+    <div class="hot-time">
+      <h2>Hot-time trading</h2>
+      <p>
+        Every once in a while, there will be a global announcement indicating that a town is buying goods for 200% of their value. This form of trading is rather simple. Before the allotted time or quantity runs out, sell any trade goods into the indicated town. Like any other forms of trading, a node must be connected to that town to profit from it. Due to the irregularity and random placement of these events, it is not wise to actively seek this trading method out unless it happily falls under a specific happenstance where the town is already connected in your node setup.
+      </p>
+    </div>
+    </section>
+	 </div>
+	</div>
+
+    {% endblock information %}
+
+    {% block footer%}
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; BDO Guides 2017</p>
+      </div>
+    </footer>
+    
+    {%endblock footer%}
+
+    {% block js %}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/js.js') }}"></script>
+
+    {% endblock js %}
+  </body>
+
+</html>

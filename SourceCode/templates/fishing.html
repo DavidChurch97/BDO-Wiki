@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>BDO Guides</title>
+    
+    {% block css %}
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/css.css') }}" rel="stylesheet" />
+    
+    {% endblock css %}
+    
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+
+  </head>
+
+  <body>
+  
+    {% block navigation %}
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">BDO Guides</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/guides">Guides</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% endblock navigation %}
+
+    <br>
+
+    {% block information %}
+   <div class="container">
+   		<div class="jumbotron">
+   		<img src="{{ url_for('static', filename='img/life_skills/fishing.png')}}" style="float: right;">
+		  <h1>Fishing</h1>
+		  <a class="btn btn-primary btn-lg" href="#information" role="button">Information</a>
+      <a class="btn btn-primary btn-lg" href="#starting" role="button">Getting started</a>
+		  <a class="btn btn-primary btn-lg" href="#rods" role="button">Fishing rods</a>
+      <a class="btn btn-primary btn-lg" href="#harpoon" role="button">Harpoon guns</a>
+		<br><br>
+		<section is="Information">
+		<div id="information">
+			<h2>Information</h2>
+			<p>
+        Fishing is one of Black Desert Online’s many life skills that any player can participate in. Earlier to the western release of Black Desert Online there was a different fishing mechanic to how it is now. Previously fishing was profitable and did not require you to always be at the keyboard playing. But as the game developed, fishing became less and less profitable while away from the keyboard. The system we have now has some similarities but also vast differences to the original fishing system.
+        We still have the essential features of requiring a rod, waiting for fish to bite and then playing a small minigame
+      </p>
+		</div>
+		</section>
+
+    <section id="starting">
+    <div class="starting">
+      <h2>Getting started</h2>
+      <p>
+        To get started just head over to any fisherman in your city and purchase a normal rod. These NPC’s can be found by searching for them using the NPC finder utility close to your minimap. Just select on the fish icon and your character will be directed towards the location of the NPC.
+      </p>
+      <p>
+        Once you have a fishing rod, approach any source of water and while you have the rod equipped press space to cast your bait. If it was successful you will begin fishing and if not, your character will retract the bait. Once you have casted your line, wait until you have a bite and when your ready press space to start reeling. The game should tell you if you have a bite or not. 
+      </p>
+      <p>
+        Now comes the first phase of the minigame. In this phase you have to press space when the bar is within the blue region. The bar will fill and empty 3 times so you can take your time to get it right. If you succeed then you reach the last phase of the minigame. If you fail you have to re-cast your line and wait for another bite. You can obtain a perfect reel if you manage to press spacebar at the exact time that the bar is completely full. On a perfect reel, you get to skip the last part of the minigame and get your fish instantly.
+      </p>
+      <p>
+        The second and last phase of the minigame is when you just have to push the right buttons within the time given. The longer the sequence the better the fish you are reeling in!
+      </p>
+      <p>
+        After you have successfully completed all phases of the minigame you will receive a window with the fish you have just caught. This is basically the essence of fishing with a rod. Once you have caught and received your fish, head over to a Trade Manager to sell your fish! These trade managers can be found by searching them with your NPC finder utility, much like how you found the fisherman.
+      </p>
+      <p>
+        To AFK fish, you just have to select the box where it says “Throw away useless items caught during auto-fishing” when you have your line out. Your character will automatically reel the catch in after 3 minutes of a bite.
+      </p>
+    </div>
+    </section>
+
+		<section id="rods">
+		<div class="rods">
+			<h2>Fishing rods</h2>
+			<p>
+       Basic fishing rods can be obtained by any local fisherman. To find this fisherman just select the NPC finder utilities to the top left of your minimap and select the fish icon.
+      </p>
+      <p>
+        There are also other types of fishing rods available. You can craft most of them with your workers in a tool workshop.
+      </p>
+      <p><u>
+        Old Fishing Rod
+      </u></p>
+      <ul>
+        <li>Durability: 10</li>
+        <li>Crafting Materials: Log x1</li>
+      </ul>
+      <p><u>
+        Fishing Rod
+      </u></p>
+      <ul>
+        <li>Durability: 30</li>
+        <li>Crafting Materials: Ash Timber x1, Copper Ingot x1, Black Stone Powder x3</li>
+      </ul>
+      <p><u>
+        Thick Fishing Rod
+      </u></p>
+      <ul>
+        <li>Durability: 40</li>
+        <li>Crafting Materials: Log x1</li>
+        <li>Level Required: Beginner Lv.10</li>
+        <li>Item Effect: Fishing Speed +1</li>
+      </ul>
+      <p><u>
+        Steel Fishing Rod
+      </u></p>
+      <ul>
+        <li>Durability: 65</li>
+        <li>Crafting Materials: Ash Timber x1, Steel x2, Black Stone Powder x4</li>
+        <li>Level Required: Skilled Lv.5</li>
+        <li>Item Effect: Fishing Speed +2</li>
+      </ul>
+      <p><u>
+        Balenos Fishing Rod
+      </u></p>
+      <ul>
+        <li>Durability: 50</li>
+        <li>Can be repaired</li>
+        <li>Crafting Materials: Ash Timber x1, Steel x2, Pure Copper Crystal x5, Monk’s Branch x9, Black Stone Powder x15</li>
+        <li>Can be enhanced with Black Stone (Weapon)</li>
+        <li>Enhancement Effect: Auto-Fishing Speed +10%</li>
+      </ul>
+      <p><u>
+        Epheria Fishing Rod
+      </u></p>
+      <ul>
+        <li>Durability: 50</li>
+        <li>Can be repaired</li>
+        <li>Crafting Materials: Birch Timber x1, Steel x2, Pure Iron Crystal x5, Monk’s Branch x9, Black Stone Powder x15</li>
+        <li>Can be enhanced with Black Stone (Weapon)</li>
+        <li>Enhancement Effect: Increase maximum durability</li>
+      </ul>
+      <p><u>
+        Mediah Fishing Rod
+      </u></p>
+      <ul>
+        <li>Durability: 50</li>
+        <li>Can be repaired</li>
+        <li>Crafting Materials: White Cedar Timber x1, Steel x2, Pure Zinc Crystal x5, Monk’s Branch x9, Black Stone Powder x15</li>
+        <li>Level Required: Artisan Lv.1</li>
+        <li>Can be enhanced with Black Stone (Weapon)</li>
+        <li>Enhancement Effect: Increase chances of catching a rare fish</li>
+      </ul>
+      <p><u>
+        Calpheon Fishing Rod
+      </u></p>
+      <ul>
+        <li>Durability: 50</li>
+        <li>Can be repaired</li>
+        <li>Crafting Materials: : Fir Timber x1, Steel x2, Pure Lead Crystal x5, Monk’s Branch x9, Black Stone Powder x15</li>
+        <li>Level Required: Professional Lv.1</li>
+        <li>Can be enhanced with Black Stone (Weapon)</li>
+        <li>Enhancement Effect: Increase chances of catching larger fish</li>
+      </ul>
+      <p><u>
+        Golden Fishing Rod
+      </u></p>
+      <ul>
+        <li>Durability: 100</li>
+        <li>Crafting Materials: Ash Timber x1, Steel x2, Gold Ingot x2, Black Stone Powder x5</li>
+        <li>Level Required: Artisan Lv.1</li>
+        <li>Item Effect: Fishing Speed +3</li>
+      </ul>
+      <p><u>
+        Triple-Float Fishing Rod
+      </u></p>
+      <ul>
+        <li>Durability: 30</li>
+        <li>Acquisition: Quest Item</li>
+        <li>Level Required: Skilled Lv.5</li>
+        <li>Enhancement Effect: Have a chance to catch up to 4 fish</li>
+		  </ul>
+    </div>
+		</section>
+
+    <section id="harpoon">
+    <div class="harpoon">
+      <h2>Harpoon guns</h2>
+      <p>
+       Harpoon guns can only be made in a tool workshop on Iliya Island
+      </p>
+      <p><u>
+        Thin Harpoon
+      </u></p>
+      <ul>
+        <li>Durability: 30</li>
+        <li>Crafting Materials: Cedar Timber x1, Copper Ingot x4, Black Stone Powder x1</li>
+        <li>Level Required: Professional Lv.1</li>
+      </ul>
+      <p><u>
+        Thick Harpoon
+      </u></p>
+      <ul>
+        <li>Durability: 40</li>
+        <li>Crafting Materials: Cedar Timber x2, Iron Ingot x7, Black Stone Powder x3</li>
+        <li>Level Required: Professional Lv.1</li>
+      </ul>
+    </div>
+    </section>
+
+		</div>
+	</div>
+
+    {% endblock information %}
+
+    {% block footer%}
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; BDO Guides 2017</p>
+      </div>
+    </footer>
+    
+    {%endblock footer%}
+
+    {% block js %}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/js.js') }}"></script>
+
+    {% endblock js %}
+  </body>
+
+</html>

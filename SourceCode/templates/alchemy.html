@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>BDO Guides</title>
+    
+    {% block css %}
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/css.css') }}" rel="stylesheet" />
+    
+    {% endblock css %}
+    
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+
+  </head>
+
+  <body>
+  
+    {% block navigation %}
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">BDO Guides</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/guides">Guides</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% endblock navigation %}
+
+    <br>
+
+    {% block information %}
+   <div class="container">
+   		<div class="jumbotron">
+   		<img src="{{ url_for('static', filename='img/life_skills/alchemy.png')}}" style="float: right;">
+		  <h1>Alchemy</h1>
+		  <a class="btn btn-primary btn-lg" href="#information" role="button">Information</a>
+      <a class="btn btn-primary btn-lg" href="#tips money" role="button">Tips & making money</a>
+		  <a class="btn btn-primary btn-lg" href="#stones" role="button">Alchemy stones</a>
+		<br><br>
+		<section is="Information">
+		<div id="information">
+			<h2>Information</h2>
+			<p>
+        Alchemy is an important profession/life skill in Black Desert. It is used to create MP potions, elixirs, crystal sockets, alchemy stones, etc.
+      </p>
+      <p>
+        High Alchemy skill can be quite profitable and is a great way to make money whilst AFK. All you really need to start, is an Alchemical Tool and a house to put it in. A basic Alchemical Tool can be bought from an Alchemist for 5,000 silver, crafted using a Tool Workshop or bought from the Auction house.
+      </p>
+      <p>
+       After you have acquired an alchemy tool and placed it in your house, you can interact with it by pressing the R button to open the alchemy window. Here you can select ingredients or a recipe from the list highlighted in blue. The recipe list will not tell you the ingredients for items you have not prepared before.
+      </p>
+      <p>
+       When you prepare some items (such as elixirs), you have a chance of earning a higher item grade. Higher item grades will give you a better stats.
+      </p>
+      <p>
+        There are 5 item grades (lowest to highest):
+      </p>
+      <ul>
+        <li>White</li>
+        <li>Green</li>
+        <li>Blue</li>
+        <li>Yellow</li>
+        <li>Orange</li>
+      </ul>
+      <p>
+        All items in our Alchemy recipes list are green grade items with green grade buff stats. The highest grade you can currently craft with Alchemy is blue grade.
+      </p>
+      <p>
+        You may also occasionally receive “trash” items, which can be exchanged for other alchemy ingredients, contribution EXP, alchemy EXP, or silver.
+      </p>
+		</div>
+		</section>
+
+    <section id="tips money">
+    <div class="tips money">
+      <h2>Tips & making money</h2>
+      <p>
+        Tips for leveling your Alchemy:
+      </p>
+      <ul>
+        <li>Alchemy quests are great to start leveling your profession. Your Black Spirit can help you find them at any time by clicking “Guide”.</li>
+        <li>Some recipes will give you “trash” items. These can be exchanged for alchemy experience.</li>
+        <li>Using the Alchemy Merchant costume will decrease the time it takes to craft. Enchanting this costume will also increase the amount of profession experience you earn.</li>
+        <li>Recipes that require more processing will give you more profession experience.</li>
+      </ul>
+      <p>
+        Tips for making money:
+      </p>
+      <ul>
+        <li>At first you’ll find it very hard to make a profit. You’ll also need lots of inventory space, weight, contribution and energy. It is however worthwhile at the higher ranks and can be extremely profitable.</li>
+        <li>Alchemy stones are great to craft because they are always in demand and are probably the best part of leveling this profession.</li>
+        <li>Elixirs are also great to craft because they are often used for Guild wars and will sell quickly.</li>
+        <li>Once you get to Masters Level the best package to create is the “Elixir of Hwaggeumson (Demihuman hunting)” package</li>
+      </ul>
+    </div>
+    </section>
+
+		<section id="stones">
+		<div class="stones">
+			<h2>Alchemy stones</h2>
+			<p>
+       You can equip one Alchemy Stone in your equipment slot, to give you a buff which will last for 3 minutes (Life Alchemy Stones last 10 minutes). It can also be reused automatically every 3 minutes, giving you a permanent buff.
+      </p>
+      <p>
+        There are 3 types of Alchemy Stones
+      </p>
+      <ul>
+        <li>Destruction – Buff: attack, accuracy, ignore resistances, attack speed, cast speed</li>
+        <li>Protection – Buff: damage reduction, evasion, maximum health, resistances</li>
+        <li>Life – Buff: reduced cooking/alchemy craft time, processing success rate, weight limit increase, gathering, fishing, gathering drop rate</li>
+      </ul>
+      <p>
+        How to create an alchemy stone
+      </p>
+      <p>
+        Players with alchemy at apprentice level 1 or above can now try and upgrade all versions of alchemy stones.
+      </p>
+      <p>
+        The recipe to create an Alchemy Stone is:
+      </p>
+      <ul>
+        <li>Shining Powder x9</li>
+        <li>Blood of the Sinner x6</li>
+        <li>Clear Liquid Reagent x10</li>
+        <li>Pure Powdered Reagent x10</li>
+        <li>Powder of Time x7</li>
+      </ul>
+      <p>
+        Place the ingredients into your Alchemist Tool.
+      </p>
+      <p>
+        You won’t create an Alchemy Stone every time, sometimes you may fail and get a broken Alchemy Stone which can be sold to a merchant for 5,000 silver. Higher Alchemy rank will increase your chances of being successful.
+      </p>
+		</div>
+		</section>
+
+		</div>
+	</div>
+
+    {% endblock information %}
+
+    {% block footer%}
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; BDO Guides 2017</p>
+      </div>
+    </footer>
+    
+    {%endblock footer%}
+
+    {% block js %}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/js.js') }}"></script>
+
+    {% endblock js %}
+  </body>
+
+</html>

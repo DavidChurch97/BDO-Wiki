@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>BDO Guides</title>
+    
+    {% block css %}
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/css.css') }}" rel="stylesheet" />
+    
+    {% endblock css %}
+
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+  
+    {% block navigation %}
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">BDO Guides</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/guides">Guides</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% endblock navigation %}
+
+    <br>
+
+    {% block information %}
+   <div class="container">
+   		<div class="jumbotron">
+   		<img src="{{ url_for('static', filename='img/life_skills/hunting.png')}}" style="float: right;">
+		  <h1>Hunting</h1>
+		  <a class="btn btn-primary btn-lg" href="#information" role="button">Information</a>
+		  <a class="btn btn-primary btn-lg" href="#hunting rifle" role="button">How to get a hunting rifle</a>
+		  <a class="btn btn-primary btn-lg" href="#how to hunt" role="button">How to hunt</a>
+      <a class="btn btn-primary btn-lg" href="#hunting exp" role="button">Hunting exp quests</a>
+		<br><br>
+		<section is="Information">
+		<div id="information">
+			<h2>Information</h2>
+			<p>
+        You can begin solo hunting at level 30+ if you have a hunting rifle. To hunt harder monsters such as the Blue Whale, you will need a high hunting level and at least one full party of players. Hunting can be profitable once you reach higher levels but it is very time consuming. Some cooking recipes also use whale meat which can only be collect by hunting.
+      </p>
+		</div>
+		</section>
+
+		<sectoin id="hunting rifle">
+		<div id="hunting rifle">
+			<h2>How to get a hunting rifle</h2>
+			<p>
+        To get a hunting rifle, you can either buy it from the item market under the “primary weapon” tab, or you have to craft it yourself using a tool workshop
+      </p>
+			<p>
+        If you are just starting out you will need to use the “Hunting for Beginners Hand Canvas” which requires Copper Ore x4 and Blackstone Powder x1. It will take approximately 20 minutes (worker speed 50).    
+      </p>
+			<p>
+        Hunting rifles can be repaired by the blacksmith just like all other weapons.   
+      </p>
+		</div>
+		</sectoin>
+
+		<section id="how to hunt">
+		<div class="how to hunt">
+			<h2>How to hunt</h2>
+			<p>
+       Once you have your hunting rifle and Tanning Knife/Butcher Knife, go to one of the locations above to search for your prey.   
+      </p>
+      <p>
+        Equip your gun by right-clicking it then aim the cross-hair at the whale/crocodile. If the cross-hair is red you will have a chance of hitting and damaging the monster. It can take several minutes to kill them but you can crouch by pressing the SPACE key to higher your range. You can run and roll with the gun equipped but you can’t interact with objects so you will have to take the weapon off to gather from the corpse. I recommend putting the gun and your main hand on your hot bar so you can switch easily from one to the other.
+      </p>
+      <p>
+        When the whale/crocodile/Boar/Deer is killed, stand on top of them to receive the loot. Make sure you have your Tanning Knife/Butcher Knife equipped then press “R” to collect. A Tanning Knife will give you hide and a Butcher Knife will give you meat. Hunting in parties will not share EXP because you receive the hunting EXP when you loot the prey and only one person can loot.
+      </p>
+		</div>
+		</section>
+
+    <section id="hunting exp">
+    <div class="hunting exp">
+      <h2>Hunting exp</h2>
+      <h3>Non-repeatabale quests</h3>
+      <p>
+        Hunting in the Forest of Seclusion
+      </p>
+      <ul>
+        <li>Requirements: 40 Amity with Hessenvale</li>
+        <li>Start NPC: Hessenvale (Toscani Farm, Balenos)</li>
+        <li>Objective: Get 1 quest item – Owl, Drop chance: 100%</li>
+        <li>Rewards: Contribution EXP 50, Recover 2 Energy, Hunting Skill Experience</li>
+        <li>This quest also requires you to use a Practise Matchlock, which can be rented from Ernill in Velia or Hessenvale at the Western Guard Camp</li>
+      </ul>
+      <p>
+        Bee Hurts Farm
+      </p>
+      <ul>
+        <li>Requirements: Finished quest – Basics of Hunting</li>
+        <li>Start NPC: Daphne DelLucci (Marino Farm, Balenos)</li>
+        <li>Objective: Get 3 quest items – Wooden Beehive, Drop chance: 100%</li>
+        <li>Rewards: Contribution EXP 50, Recover 2 Energy, Hunting Skill Experience</li>
+        <li>This quest also requires you to use a Practise Matchlock, which can be rented from Daphne DelLucci</li>
+      </ul>
+      <p>
+        Shoot and Help
+      </p>
+      <ul>
+        <li>Requirements: Level > 29, Exploration (5) > 1</li>
+        <li>Start NPC: Daphne DelLucci (Marino Farm, Balenos)</li>
+        <li>Objective: Kill monsters (5) – Wooden Beehive</li>
+        <li>Rewards: Contribution EXP 60, [Hunting] Beginner Matchlock, Hunting Skill Experience</li>
+        <li>This quest also requires you to use a Practise Matchlock, which can be rented from Daphne DelLucci</li>
+      </ul>
+      <p>
+        Hunter-Loving Hunter
+      </p>
+      <ul>
+        <li>Requirements: Finished quest – Shoot and Help</li>
+        <li>Start NPC: Daphne DelLucci (Marino Farm, Balenos)</li>
+        <li>Objective: Meet NPC – Black-Robed Man</li>
+        <li>Rewards: Contribution EXP 60</li>
+      </ul>
+      <p>
+        Brothers at Lake Kaia
+      </p>
+      <ul>
+        <li>Requirements: Finished quest – [Daily] Fly like a Butterfly, Sting like a Bee!</li>
+        <li>Start NPC: Daphne DelLucci (Marino Farm, Balenos)</li>
+        <li>Objective: Get 3 quest items – Wooden Beehive, Drop chance: 100%</li>
+        <li>Rewards: Contribution EXP 60, Dull Butcher Knife, Deer Meat</li>
+      </ul>
+      <p>
+        Annoying Jellyfish
+      </p>
+      <ul>
+        <li>Requirements: Level > 49</li>
+        <li>Start NPC: Merio (Lake Kaia, Calpheon)</li>
+        <li>Objective: Kill monsters (3) – Jellyfish</li>
+        <li>Rewards: Contribution EXP 80, Recover 2 Energy, Hunting Skill Experience</li>
+      </ul>
+
+      <h3>Repeatable quests</h3>
+      <p>
+        Annoying Jellyfish
+      </p>
+      <ul>
+        <li>Requirements: Level > 49</li>
+        <li>Start NPC: Merio (Lake Kaia, Calpheon)</li>
+        <li>Objective: Kill monsters (3) – Jellyfish</li>
+        <li>Rewards: Contribution EXP 80, Recover 2 Energy, Hunting Skill Experience</li>
+      </ul>
+      <p>
+        [Daily] Fly Like a Butterfly, Sting Like a Bee!
+      </p>
+      <ul>
+        <li>Requirements: Finished quest – Hunter-Loving Hunter</li>
+        <li>Start NPC: Chuck Laurie (Wolf Hills, Calpheon)</li>
+        <li>Objective: Give item (10) – Weeds, Kill monster (1) – Witch’s Deer</li>
+        <li>Rewards: Contribution EXP 100, Hunting Skill Experience</li>
+      </ul>
+      <p>
+        [Daily] Easy Game
+      </p>
+      <ul>
+        <li>Requirements: Level > 29</li>
+        <li>Start NPC: Chuck Laurie (Wolf Hills, Calpheon)</li>
+        <li>Objective: Kill monsters (5) – Giant Elk</li>
+        <li>Rewards: Contribution EXP 50, Hunting Skill Experience</li>
+      </ul>
+      <p>
+        [Daily] The Reckless One
+      </p>
+      <ul>
+        <li>Requirements: Finished quest – [Daily] Easy Game</li>
+        <li>Start NPC: Chuck Laurie (Wolf Hills, Calpheon)</li>
+        <li>Objective: Kill monster (2) – Giant Boar</li>
+        <li>Rewards: Contribution EXP 50, Hunting Skill Experience</li>
+      </ul>
+      <p>
+        [Daily] Hunter’s Honor
+      </p>
+      <ul>
+        <li>Requirements: Level > 49, Finished quest – [Daily] The Reckless One</li>
+        <li>Start NPC: Chuck Laurie (Wolf Hills, Calpheon)</li>
+        <li>Objective: Kill monster (1) – Giant Brown Bear</li>
+        <li>Rewards: Contribution EXP 80, Hunting Skill Experience, Sharp Butcher Knife</li>
+      </ul>
+      <p>
+        An Epicurean Alligator
+      </p>
+      <ul>
+        <li>Requirements: Finished quest – Brothers at Lake Kaia</li>
+        <li>Start NPC: Leo Laurie (Lake Kaia, Calpheon)</li>
+        <li>Objective: Give item (5) – Deer Meat, Obtain item (1) – Bull Gator Meat, Give item (1) – Bull Gator Meat</li>
+        <li>Rewards: Contribution EXP 100, Hunting Skill Experience</li>
+      </ul>
+      <p>
+        Those Seagulls!
+      </p>
+      <ul>
+        <li>Requirements: Level > 10, Have item – Practice Matchlock</li>
+        <li>Start NPC: Crio (Velia, Balenos)</li>
+        <li>Objective: : Kill monsters (2) – Seagull</li>
+        <li>Rewards: Recover 3 Energy, Crio and Seagulls (knowledge), Contribution EXP 70, Hunting Skill Experience</li>
+        <li>Optional Rewards: HP Potion (Small) x10 OR MP Potion (Small) x10</li>
+        <li>This quest also requires you to use a Practise Matchlock, which can be rented from Daphne DelLucci at Marino Farm</li>
+      </ul>      
+      <p>
+        An Eye for an Eye
+      </p>
+      <ul>
+        <li>Requirements: Finished quest – The Cat that Swallowed the Canary</li>
+        <li>Start NPC: Villager (Alejandro Farm, Serendia)</li>
+        <li>Objective: Kill monster (1) – Eagle</li>
+        <li>Rewards: Contribution EXP 100, Recover 3 Energy, Hunting Skill Experience</li>
+      </ul>
+    </div>
+    </section>
+		</div>
+	</div>
+
+    {% endblock information %}
+
+    {% block footer%}
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; BDO Guides 2017</p>
+      </div>
+    </footer>
+    
+    {%endblock footer%}
+
+    {% block js %}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/js.js') }}"></script>
+
+    {% endblock js %}
+  </body>
+
+</html>

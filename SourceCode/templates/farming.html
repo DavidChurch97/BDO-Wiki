@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>BDO Guides</title>
+    
+    {% block css %}
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/css.css') }}" rel="stylesheet" />
+    
+    {% endblock css %}
+    
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+
+  </head>
+
+  <body>
+  
+    {% block navigation %}
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">BDO Guides</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/guides">Guides</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% endblock navigation %}
+
+    <br>
+
+    {% block information %}
+   <div class="container">
+   		<div class="jumbotron">
+   		<img src="{{ url_for('static', filename='img/life_skills/farming.png')}}" style="float: right;">
+		  <h1>Farming</h1>
+		  <a class="btn btn-primary btn-lg" href="#information" role="button">Information</a>
+      <a class="btn btn-primary btn-lg" href="#points" role="button">Contribution points</a>
+		  <a class="btn btn-primary btn-lg" href="#renting" role="button">Renting farms</a>
+      <a class="btn btn-primary btn-lg" href="#placing" role="button">Placing farms</a>
+		<br><br>
+		<section is="Information">
+		<div id="information">
+			<h2>Information</h2>
+			<p>
+        To start farming you will need to rent a fence from an NPC using “Contribution points”. Contribution points are earned by completing quests.
+      </p>
+      <p>
+        Contribution points can be seen in the top left along with your Skill points and Spirit/Energy.
+      </p>
+		</div>
+		</section>
+
+    <section id="points">
+    <div class="points">
+      <h2>Contribution points</h2>
+      <p>
+        If you aren’t using workers to tend to your farms, using smaller fences is far more efficient for your CP. If you have 30 contribution points, you will get a total of 40 slots by using 10 small fences, compared to 30 slots using 3 strong fences. You should aim to use as many small fences as you can and I only recommend using strong fences if you want to use a total of 100 contribution points for the maximum of 100 slots or if you are planning to use haystacks.
+      </p>
+      <ul>
+        <li>Small Fences-  1.33 slots per CP</li>
+        <li>Plain Fences –  1.16 slots per CP</li>
+        <li>Strong Fences – 1.11 slots per CP</li>
+        <br>
+        <li>1 to 30  CP – use Small Fences only for maximum slots</li>
+        <li>31 to 99 CP – use Plain Fences and Small Fences if you have less than 10 total farms</li>
+        <li>100 CP – use Strong Fences only</li>
+      </ul>
+    </div>
+    </section>
+
+		<section id="renting">
+		<div class="renting">
+			<h2>Renting a farm</h2>
+			<p>
+       To quickly find an NPC which will rent a fence to you, open your NPC locator (magnifying glass) to the left of your mini-map. In the search box type in “fence” to show all NPCs you have discovered which will rent a farm to you.
+      </p>
+      <p>
+        There is also an NPC at the Norther Guard Camp who will teach you the basics of farming and give you a Weak Fence (1 crop).
+      </p>
+      <p>
+        Once you find an NPC, click the [Rent] button in the chat window, then “Confirm”.
+      </p>
+      <p>
+        The fence will go straight into your inventory. To return the farm and get your contribution points back, you need to go back to the same NPC and click “[Return]”
+      </p>
+		</div>
+		</section>
+
+    <section id="placing">
+    <div class="placing">
+      <h2>Placing a farm</h2>
+      <p>
+       To place your farm you simply need to right-click the item in your inventory. Farms can’t be placed in safe zones and must be in a grassy area. When placing the farm make sure that all of the area is blue and none of the edges are in a red zone, then click the confirm button to start building your farm.
+      </p>
+      <h3>Farm placement</h3>
+      <p>
+        It is recommend that you place your farm in Velia if possible due to its convenience and high groundwater value as well as great crate bonus rates and workshops. But Heidel and Calpheon are also good locations for most crops. If you’re looking for the lowest possible growing time you will want to place the farm in the best spot for a particular crop. Different crops need different temperatures and humidity. You can check a specific crops information by planting the seed then pressing R next to it to view its information.
+      </p>
+      <p>
+        You will want to place your farms as close to each other as possible because when it comes to tending to your farm, you can use less fertilizer/water if your farms are placed correctly. 
+      </p>
+      <h3>Harvesting</h3>
+      <p>
+        Once the crop is at 100% growth, you will get an average of 70 crops for white grade seeds, 50 for high quality and 30 for special quality seeds (if the seed takes 2 slots this is doubled). You also have a chance of extra yields which gives you an additional 1 – 5 crops.
+      </p>
+      <p>
+        If your plant is at 200% growth it will be an old crop and only yield 50% of this.
+      </p>
+    </div>
+    </section>
+
+		</div>
+	</div>
+
+    {% endblock information %}
+
+    {% block footer%}
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; BDO Guides 2017</p>
+      </div>
+    </footer>
+    
+    {%endblock footer%}
+
+    {% block js %}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/js.js') }}"></script>
+
+    {% endblock js %}
+  </body>
+
+</html>

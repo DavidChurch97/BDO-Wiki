@@ -87,6 +87,14 @@ def Alchemy():
 def Cooking():
     return render_template("cooking.html"), 200
 
+@app.route("/farming")
+def Farming():
+    return render_template("farming.html"), 200
+
+@app.route("/fishing")
+def Fishing():
+    return render_template("fishing.html"), 200
+
 @app.route("/gathering")
 def Gathering():
     return render_template("gathering.html"), 200
@@ -111,9 +119,9 @@ def Balenos():
 def Calpheon():
     return render_template("calpheon.html"), 200
 
-@app.route("/media")
-def Media():
-    return render_template("media.html"), 200
+@app.route("/mediah")
+def Mediah():
+    return render_template("mediah.html"), 200
 
 @app.route("/serendia")
 def Serendia():

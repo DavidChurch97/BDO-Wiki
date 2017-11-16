@@ -16,6 +16,8 @@
     <link href="{{ url_for('static', filename='css/css.css') }}" rel="stylesheet" />
     
     {% endblock css %}
+
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
   </head>
 
   <body>
@@ -153,6 +155,12 @@
           <h3>Farming
           </h3>
           <a href="/farming" class="btn btn-secondary btn-lg active" role="button">Guide</a>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/life_skills/fishing.png') }}" alt="">
+          <h3>Fishing
+          </h3>
+          <a href="/fishing" class="btn btn-secondary btn-lg active" role="button">Guide</a>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/life_skills/gathering.png') }}" alt="">

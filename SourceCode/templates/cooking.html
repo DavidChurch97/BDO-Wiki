@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>BDO Guides</title>
+    
+    {% block css %}
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/css.css') }}" rel="stylesheet" />
+    
+    {% endblock css %}
+    
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+
+  </head>
+
+  <body>
+  
+    {% block navigation %}
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">BDO Guides</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/guides">Guides</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% endblock navigation %}
+
+    <br>
+
+    {% block information %}
+   <div class="container">
+   		<div class="jumbotron">
+   		<img src="{{ url_for('static', filename='img/life_skills/cooking.png')}}" style="float: right;">
+		  <h1>Cooking</h1>
+		  <a class="btn btn-primary btn-lg" href="#information" role="button">Information</a>
+		  <a class="btn btn-primary btn-lg" href="#mass" role="button">Mass produce</a>
+		  <a class="btn btn-primary btn-lg" href="#imperial" role="button">Imperial cooking</a>
+      <a class="btn btn-primary btn-lg" href="#tips money" role="button">Tips & making money</a>
+		<br><br>
+		<section is="Information">
+		<div id="information">
+			<h2>Information</h2>
+			<p>
+        Cooking is an important profession/life skill in Black Desert. It is used to create HP potions, food and drink (buffs), special packages, etc.
+      </p>
+      <p>
+        High Cooking skill can be quite profitable and is a great way to make money whilst AFK. All you really need to start, is a Cooking Utensil and a house to put it in. A basic Cooking Utensil can be bought from a food merchant for 1,000 silver, crafted using a Tool Workshop or bought from the Auction house.
+      </p>
+      <p>
+        After you have acquired a stove and placed it in your house, you can interact with it by pressing the R button to open the cooking window. Here you can select ingredients to cook or select a food/drink from the recipe list of dishes, which will be highlighted in blue. The recipe list will not tell you the ingredients for items you have not prepared before.
+      </p>
+      <p>
+        When you prepare some dishes, you have a chance of earning a higher item grade. Higher item grades will give you a higher food buff.
+      </p>
+      <p>
+        There are 5 item grades (lowest to highest):
+      </p>
+      <ul>
+        <li>White</li>
+        <li>Green</li>
+        <li>Blue</li>
+        <li>Yellow</li>
+        <li>Orange</li>
+      </ul>
+      <p>
+        All dishes in our Cooking recipes list are the lowest craft-able grade for that item. The highest grade you can cook with all basic dishes is yellow grade, and specials have a chance to be orange grade.
+      </p>
+      <p>
+        You may also occasionally receive “trash” items which can be exchanged for other cooking ingredients, contribution EXP, cooking EXP, or silver.
+      </p>
+		</div>
+		</section>
+
+		<sectoin id="mass">
+		<div id="masss">
+			<h2>How to mass produce</h2>
+			<p>
+        To mass produce a recipe, you simply go to your Cooking Utensil in your house and press “R” to use it. Right-click your ingredients and make sure you enter ingredients for 1 result. (Entering more will consume all of your ingredients and only give you 1 result.
+      </p>
+      <ul>
+        <li>Open cooking UI</li>
+        <li>click “Produce continuously”.</li>
+        <li>Click “Yes” then enter the amount you wish to make. You can click “Maximum quantity” or press “F” to cook as many as possible. Then click “OK” and you will automatically make as many as you have ingredients or energy for.</li>
+      </ul>
+		</div>
+		</sectoin>
+
+		<section id="imperial">
+		<div class="imperial">
+			<h2>Imperial cooking</h2>
+			<p>
+       Imperial Cooking Packages are created by going to the crafting/processing window (L) then selecting “Imperial Cooking”. You must be in channel 1 to craft them and need a profession rank of Apprentice (Trainee) Lv.1 or higher to make. To deliver them to a NPC you need to visit a big city and you will find them standing on the street corners. 
+      </p>
+      <p>
+        Golden Seals (Cooking) can be collected by handing in Imperial Cooking packages. Collect them to exchange for one of the following items:
+      </p>
+      <ul>
+        <li>250 seals: Ancient Kamel Statue</li>
+        <li>280 seals: Hardened Leather Saddle of Storm</li>
+        <li>400 seals: Black Essence (Socket): Max HP +100, Weight Limit +20LT, Damage Reduction +2</li>
+        <li>400 seals: Fine Horse Trainer’s Clothes</li>
+      </ul>
+      <p>
+        You can exchange them at the Imperial Crafting Delivery NPC “Pasvinder” in Hidel.
+      </p>
+		</div>
+		</section>
+
+    <section id="tips money">
+    <div class="tips money">
+      <h2>Tips & making money</h2>
+      <p>
+        Tips for leveling your Cooking:
+      </p>
+      <ul>
+        <li>Cooking quests are great to start leveling your profession. Your Black Spirit can help you find them at any time by clicking “Guide”.</li>
+        <li>Some recipes will give you “trash” items. These can be exchanged for cooking experience.</li>
+        <li>Using the Cooking Merchant costume will decrease the time it takes to cook. Enchanting this costume will also increase the amount of profession experience you earn.</li>
+        <li>Recipes that require more processing will give you more profession experience. For example: crafting “Beer” for workers requires 3 items that can be bought from the shop and 1 item that doesn’t require any preparation. You’ll find that cooking something like “Cheese Pie” gives more experience because you have to create the dough, cheese and butter beforehand.</li>
+      </ul>
+      <p>
+        Tips for making money:
+      </p>
+      <ul>
+        <li>At first you’ll find it very hard to make a profit. You’ll also need lots of inventory space, weight, contribution and energy. It is however worthwhile at the higher ranks and can be extremely profitable.</li>
+        <li>Once you get to Masters Level the best package to create is “Sute Tea”.</li>
+      </ul>
+    </div>
+    </section>
+		</div>
+	</div>
+
+    {% endblock information %}
+
+    {% block footer%}
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; BDO Guides 2017</p>
+      </div>
+    </footer>
+    
+    {%endblock footer%}
+
+    {% block js %}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/js.js') }}"></script>
+
+    {% endblock js %}
+  </body>
+
+</html>

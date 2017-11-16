@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>BDO Guides</title>
+    
+    {% block css %}
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/css.css') }}" rel="stylesheet" />
+    
+    {% endblock css %}
+    
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+
+  </head>
+
+  <body>
+  
+    {% block navigation %}
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">BDO Guides</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/guides">Guides</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% endblock navigation %}
+
+    <br>
+
+    {% block information %}
+   <div class="container">
+   		<div class="jumbotron">
+   		<img src="{{ url_for('static', filename='img/life_skills/gathering.png')}}" style="float: right;">
+		  <h1>Gathering</h1>
+		  <a class="btn btn-primary btn-lg" href="#information" role="button">Information</a>
+		  <a class="btn btn-primary btn-lg" href="#tools" role="button">Gathering tools</a>
+		  <a class="btn btn-primary btn-lg" href="#wood" role="button">Wood chopping</a>
+      <a class="btn btn-primary btn-lg" href="#resin blood" role="button">Collecting resin & blood</a>
+      <a class="btn btn-primary btn-lg" href="#plants" role="button">Harvesting plants</a>
+      <a class="btn btn-primary btn-lg" href="#meat" role="button">Collecting meat</a>
+      <a class="btn btn-primary btn-lg" href="#hide" role="button">Collecting hide</a>
+      <a class="btn btn-primary btn-lg" href="#mining" role="button">Mining</a>
+      <a class="btn btn-primary btn-lg" href="#water" role="button">Collecting water</a>
+		<br><br>
+		<section is="Information">
+		<div id="information">
+			<h2>Information</h2>
+			<p>
+        The gathering and crafting system in Black Desert is very complex. Gathering takes up energy but does give you experience and levels up your gathering skill. Once your gathering skill is higher you can use better tools which let you gather faster.
+      </p>
+      <p>
+        Some materials on this list, such as wood and plants, can be gathered by workers. Gathering items yourself is much faster than using workers and some items such as crude stone, can only be gathered by yourself, but are an important material for crafting.
+      </p>
+      <p>
+        As well as all of the items in this guide, you can collect other items from markets, bags and boxes placed around the map.
+      </p>
+		</div>
+		</section>
+
+		<sectoin id="tools">
+		<div id="tools">
+			<h2>Gathering tools</h2>
+			<p>
+        Beginner gathering tools can be bought from a materials merchant. Higher level gathering tools need to be crafted with a tools workshop or bought from the item market (auction house). Higher level gathering tools increase the speed that you gather materials
+      </p>
+			<p>
+       There are currently 6 different tools for gathering: 
+      </p>
+      <ul>
+        <li>Axe – Used for chopping wood</li>
+        <li>Sap – Used to collect resin from trees or blood from animals</li>
+        <li>Hoe – Used for harvesting plants (not needed to harvest plants on your own farm)</li>
+        <li>Knife for Slaughter – Used to collect meat from animals</li>
+        <li>Knife for Tannery – Used to collect hide from animals</li>
+        <li>Pickaxe – Used for mining</li>
+        <li>Bottle (Empties) – Used to collect water from rivers and ponds</li>
+      </ul>
+		</div>
+		</sectoin>
+
+		<section id="wood">
+		<div class="wood">
+			<h2>Wood chopping</h2>
+			<p>
+       Once you have an axe you can go up to almost any tree to chop it down for wood and logs. Equip the axe by right-clicking, then go up to a tree and press “R” to chop. 
+      </p>
+      <p>
+        There are currently 17 types of trees you can find in the open world:
+      </p>
+      <ul>
+        <li>Cedar</li>
+        <li>Maple</li>
+        <li>Ash</li>
+        <li>Birch</li>
+        <li>Pine</li>
+        <li>Fir</li>
+        <li>Olive</li>
+        <li>Elder</li>
+        <li>Acacia</li>
+        <li>Palm</li>
+        <li>Dry old</li>
+        <li>Cypress</li>
+        <li>Apple</li>
+        <li>Broad leaf</li>
+        <li>Needle leaf</li>
+      </ul>
+      <p>
+        The most common trees such as: Ash, Maple and Birch, can also be processed to create planks by pressing “L” to open the crafting window, then “Wood Chopping”.
+      </p>
+		</div>
+		</section>
+
+    <section id="resin blood">
+    <div class="resin blood">
+      <h2>Collecting resin & blood</h2>
+      <p>
+        Once you have a sap tool you can go up to almost any tree to collect resin or kill an animal to collect its blood. Equip the tool by right-clicking, then go up to a tree or dead animal and press “R” to collect. Blood is often used in alchemy recipes.
+      </p>
+      <p>
+        Below are some locations of animals, this should cover all of the types of blood needed for alchemy:
+      </p>
+      <ul>
+        <li>Boar</li>
+        <li>Troll</li>
+        <li>Wolf</li>
+        <li>Fox</li>
+        <li>Lizard</li>
+      </ul>
+    </div>
+    </section>
+
+    <section id="plants">
+    <div class="plants">
+      <h2>Harvesting plants</h2>
+      <h3>Non-repeatabale quests</h3>
+      <p>
+        The hoe tool is used for harvesting plants, collecting herbs and seeds. Equip the tool by right-clicking, then go up to plant and press “R” to collect. Various plants and herbs are used in cooking and alchemy.
+      </p>
+      <p>
+        Below are some locations that I found best for harvesting common plants (please note that these are not all of the areas):
+      </p>
+      <ul>
+        <li>This area is very close to Calpheon city and has plenty of Potatoes and Cabbages as well as Wild Herbs, Bushes and Thickets.</li>
+        <li>This area is just south of Velia Town and had lots of fruit trees which have a chance to drop seeds that cannot be bought at a seed merchant</li>
+        <li>This area is close to Velia Town and has 2 fields full of Corn as well as thickets and bushes around.</li>
+        <li>This area is very close to Calpheon city and has plenty of Roses, Tulips, Corn, Potatoes and Fruit Trees. </li>
+        <li>This area also has Barley around if you look in the area where the Moles and purple flowers are.</li>
+        <li>This area has lots of Sunflowers and Barley</li>
+        <li>This area has lots of Potatoes, Corn and Grapes.</li>
+        <li>This area is quite out of the way but has lots of Aloe and Cotton which is used for cooking and alchemy recipes</li>
+      </ul>
+    </div>
+    </section>
+
+    <section id="meat">
+    <div class="meat">
+      <h2>Collecting meat</h2>
+      <p>
+        The Knife for Slaughter tool is used for collecting meat after you have killed an animal. Equip the tool by right-clicking, then go up to a dead animal and press “R” to collect. Meat is often used in cooking recipes.
+      </p>
+    </div>
+    </section>
+
+    <section id="hide">
+    <div class="hide">
+      <h2>Collecting hide</h2>
+      <p>
+        The Knife for Tannery tool is used for collecting hide after you have killed an animal. Equip the tool by right-clicking, then go up to a dead animal and press “R” to collect. Hide and leather is often used to craft armor and other equipment.
+      </p>
+      <p>There are four types of hide:</p>
+      <ul>
+        <li>Thin Hide – collected from Weasels (Weasel Hide) then dried – can also be collected from Monkeys and Raccoons</li>
+        <li>Soft Hide – collected from Foxes (Fox Hide) then dried – can also be collected from Deer and Sheep</li>
+        <li>Hardened Hide – collected from Lizards – can also be collected from Cows and Rhinos</li>
+        <li>Tough Hide – collected from Boars – can also be collected from Worms (Worm Hide) then dried</li>
+      </ul>
+    </div>
+    </section>
+
+    <section id="mining">
+    <div class="mining">
+      <h2>Mining</h2>
+      <p>
+        Once you have a pickaxe, you can go up to almost any rock to mine for iron ore, tin ore, copper ore and crude stones. Equip the pickaxe by right-clicking, then go up to a rock and press “R” to mine.
+      </p>
+      <p>
+        There are currently 4 types of common rocks you can find in the open world:
+      </p>
+      <ul>
+        <li>Fieldspar – These tend to drop Iron ore and crude stones.</li>
+        <li>Granite – These drop copper ore and crude stones.</li>
+        <li>Diorite – These tend to drop tin ore and crude stones</li>
+        <li>Mossy Rock – These rocks tend to drop tin ore and crude stones</li>
+      </ul>
+      <p>
+        Each of these rocks have a chance of dropping melted fragments which are used in crafting. Ore can also be processed into melted fragments by pressing “L” to open the crafting window, then “Heating”. Refer to our crafting guide for more information on the use of these items.
+      </p>
+      <p>
+        Below are some locations that are best for mining common rocks (please note that these are not all of the areas):
+      </p>
+      <ul>
+        <li>This area had plenty of the common rocks as well as Pure Lead Ore, Pure Iron Ore, Pure Tin Ore and Coal.</li>
+        <li>This area also had plenty of common rocks as well as Pure Lead Ore, Pure Iron Ore, Pure Tin Ore and Coal but was a much smaller area.</li>
+        <li>This area had plenty of Pure Copper Ore.</li>
+        <li>This area is very close to Hidel City but most had common rocks and some Pure Iron Ore.</li>
+      </ul>
+      <p>
+        There are also more rare and uncommon rocks, such as:
+      </p>
+      <ul>
+        <li>Coal</li>
+        <li>Mudstone</li>
+        <li>Sandstone</li>
+        <li>Pure Iron ore</li>
+        <li>Pure Lead ore</li>
+        <li>Pure Tin ore</li>
+        <li>Pure Copper ore</li>
+        <li>Zinc</li>
+        <li>Topaz</li>
+        <li>Silver</li>
+        <li>Gold</li>
+        <li>Platinum</li>
+        <li>Diamond</li>
+        <li>Ruby</li>
+        <li>Sapphire</li>
+      </ul>
+      <p>
+        Some of these items such as diamonds, can only be obtained as a rare drop from earth crab monsters which are located in Calpheon. Some of these items are also easier to obtain by using workers.
+      </p>
+    </div>
+    </section>
+
+    <section id="water">
+    <div class="water">
+      <h2>Collecting water</h2>
+      <p>
+        Once you have an empty bottle, you can collect river water by standing in ponds or rivers. Equip the bottle by right-clicking, then press “R” to collect. You can also purify this water by pressing “L” then using the “Thinning” option. Purified water is often used in alchemy recipes.
+      </p>
+    </div>
+    </section>
+		</div>
+	</div>
+
+    {% endblock information %}
+
+    {% block footer%}
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; BDO Guides 2017</p>
+      </div>
+    </footer>
+    
+    {%endblock footer%}
+
+    {% block js %}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/js.js') }}"></script>
+
+    {% endblock js %}
+  </body>
+
+</html>
