@@ -1,26 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>BDO Guides</title>
-    
-    {% block css %}
-    <!-- Bootstrap core CSS -->
-    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
-
-    <!-- Custom styles for this template -->
-    <link href="{{ url_for('static', filename='css/css.css') }}" rel="stylesheet" />
-    
-    {% endblock css %}
-    
-    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
-
-  </head>
-
+{% extends "base.html" %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
   <body>
   
     {% block navigation %}
@@ -67,17 +49,6 @@
 
     {% endblock information %}
 
-    {% block footer%}
-
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; BDO Guides 2017</p>
-      </div>
-    </footer>
-    
-    {%endblock footer%}
-
     {% block js %}
 
     <!-- Bootstrap core JavaScript -->
@@ -87,4 +58,4 @@
     {% endblock js %}
   </body>
 
-</html>
+{% endblock %}

@@ -1,64 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>BDO Guides</title>
-    
-    {% block css %}
-    <!-- Bootstrap core CSS -->
-    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
-
-    <!-- Custom styles for this template -->
-    <link href="{{ url_for('static', filename='css/css.css') }}" rel="stylesheet" />
-    
-    {% endblock css %}
-
-    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
-  </head>
-
-  <body>
-  
-    {% block navigation %}
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="/">BDO Guides</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/guides">Guides</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    {% endblock navigation %}
-
-    {% block Carousel %}
+{% extends "base.html" %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<body>
+  {% block Carousel %}
     
     <header>
-		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-		  <div class="carousel-inner">
-		    <div class="carousel-item active">
-		      <img class="d-block w-100" src="{{ url_for('static', filename='img/kamasylvia_header.png') }}" height="600px">
-		        <div class="carousel-caption d-none d-md-block">
-				    <h3>Kamasylvia</h3>
-				    <p>Officially released September 27th</p>
-				  </div>
-		    </div>
-		  </div>
-		</div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="{{ url_for('static', filename='img/kamasylvia_header.png') }}" height="600px">
+            <div class="carousel-caption d-none d-md-block">
+            <h3>Kamasylvia</h3>
+            <p>Officially released September 27th</p>
+          </div>
+        </div>
+      </div>
+    </div>
     </header>
     {% endblock Carousel %}
 
@@ -105,17 +64,6 @@
     </div>
     <!-- /.container -->
 
-    {% block footer%}
-
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; BDO Guides 2017</p>
-      </div>
-    </footer>
-    
-    {%endblock footer%}
-
     {% block js %}
 
     <!-- Bootstrap core JavaScript -->
@@ -124,6 +72,5 @@
     <script src="{{ url_for('static', filename='js/js.js') }}"></script>
 
     {% endblock js %}
-  </body>
-
-</html>
+</body>
+{% endblock %}

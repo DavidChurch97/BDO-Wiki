@@ -1,8 +1,5 @@
 import ConfigParser
-import logging
-
-from logging.handlers import RotatingFileHandler
-from flask import Flask, render_template, request
+from flask import Flask, render_template
 app = Flask(__name__)
 
 #--------Main pages--------#
